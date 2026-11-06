@@ -95,5 +95,14 @@ int w5() {
 
 int main() {
     setlocale(LC_ALL, "RU");
-    w5();
+    int w;
+    cout << "Выберите задание (1-5): ";
+    cin >> w;
+    switch (w) {
+    case 1: w1(); break;
+    case 2: w2(); break;
+    case 3: w3(); break;
+    case 4: w4(); break;
+    case 5: w5(); break;
+    default: cout << "Нет такого задания";
 }
